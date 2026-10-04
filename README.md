@@ -1,4 +1,4 @@
-# AI-Powered Interview Preparation & Answer Evaluation System
+# AI-Powered Interview Preparation & Answer Evaluation System.
 
 An interactive interview-practice application for candidates preparing for technology and business roles. Configure a mock interview, answer role-focused questions, and review transparent, estimated feedback across several scoring dimensions.
 
