@@ -180,7 +180,8 @@ const behavioralTemplates = [
 
 export function buildQuestions(role: string, type: InterviewType, difficulty: Difficulty, count: number) {
   const roleQuestions = baseQuestions.filter((question) => question.role === role);
-  const generated: Question[] = roleTopics[role].map((topic, index) => ({
+  const topics = roleTopics[role] ?? [];
+  const generated: Question[] = topics.map((topic, index) => ({
     id: `${role.toLowerCase().replaceAll(" ", "-")}-${topic.toLowerCase().replaceAll(" ", "-")}-${index}`,
     role,
     type: index % 3 === 0 ? "Behavioral" : "Technical",
